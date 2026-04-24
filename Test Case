@@ -1,0 +1,30 @@
+# Test Case Nəticələri
+
+## Pozitiv Testlər
+
+1. **Addım:** Lalafo saytında "Uşaq Dünyası" xanasını basdım  
+   **Nəticə:** Uşaqlara aid mallar çıxdı  
+
+2. **Addım:** Uşaq bölməsində axtarışda "oyuncaq" yazdım və axtar düyməsini basdım  
+   **Nəticə:** Oyuncaqlar çıxdı  
+
+3. **Addım:** Sıralamada əvvəlcə "ucuzu" seçdim  
+   **Nəticə:** Birinci ucuz mallar çıxdı  
+
+4. **Addım:** "SMS" düyməsinə basdım  
+   **Nəticə:** Mesaj yazmaq üçün bölmə açıldı  
+
+5. **Addım:** "Zəng edin" düyməsinə basdım  
+   **Nəticə:** Nömrə göstərildi  
+
+
+## Neqativ Testlər
+
+1. **Addım:** Lalafo saytında "Uşaq Dünyası" xanasında axtarışa yalnız 0-lar yazdım  
+   **Nəticə:** "Heç bir nəticə tapılmadı" yazısı çıxdı  
+
+2. **Addım:** Uşaq velosipedlərində minimum qiymət 100000 AZN və "işlənmiş" seçib axtar düyməsini basdım  
+   **Nəticə:** "Heç nə tapılmadı" yazısı çıxdı  
+
+3. **Addım:** "Nömrəyə zəng et" düyməsinə basdım  
+   **Nəticə:** Lalafo tətbiqini yükləməyi istədi 
