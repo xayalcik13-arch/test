@@ -1,0 +1,23 @@
+MDF – Funksional Yoxlama
+Test Modulu: Lalafo.az – Daşınmaz Əmlak bölməsi
+Test Tipi: Funksional
+Status: Uğurlu (Pozitiv/Neqativ testlərə əsasən)
+Pozitiv Testlər
+№	Addım	Gözlənilən nəticə	Faktiki nəticə	Status
+1	Daşınmaz əmlak xanasına klik etdim	Daşınmaz əmlak elanları göstərilir	Göstərildi	✅ Pass
+2	Elanların yanındakı “Zəng edin” düyməsinə klik etdim	Əlaqə nömrəsi görünür	Göründü	✅ Pass
+3	Hər hansı elanı klik etdim	Ətraflı təsvir və şəkillər açılır	Açıldı	✅ Pass
+4	Soldakı filterdə ünvan olaraq “Bakı” seçdim	Yalnız Bakıya aid elanlar görünür	Göründü	✅ Pass
+5	“Dostlarla bölüş” bölməsində WhatsApp işarəsinə klik etdim	Yeni paylaşım səhifəsinə yönləndirir	Yönləndirdi	✅ Pass
+Neqativ Testlər
+№	Addım	Gözlənilən nəticə	Faktiki nəticə	Status
+1	Axtarış bölməsinə “0000” yazdım	“Heç bir nəticə tapılmadı” mesajı çıxmalıdır	Çıxdı	✅ Pass
+2	Filtrdə “ucuz, baha və s.” seçdim	İlk öncə VİP elanlar göstərilir	Göstərdi	⚠ Qismən Pass
+3	“Zəng edin” xanasındakı nömrəyə klik etdim	Əlaqə aktiv olmalıdır	Reaksiya yoxdur	❌ Fail
+4	Qiymətə max=4, min=5 yazdım	Uyğunsuzluq səbəbilə nəticə çıxmamalıdır	“Heç nə tapmadı” çıxdı	✅ Pass
+⚙️ MDF – Qeyri-funksional Yoxlama
+
+
+Yoxlama tipi	Təsvir	Nəticə	Qiymətləndirmə
+Usability (İstifadə rahatlığı)	Saytda naviqasiya sadədir, rənglər və yazılar oxunaqlıdır, istifadəçi interfeysi intuitivdir.	Normal	✅ Müsbət
+Compatibility (Uyğunluq)	Sayt Chrome, Firefox və mobil cihazlarda düzgün işləyir, butonlar itmir.	Normal	✅ Müsbət
