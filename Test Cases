@@ -1,0 +1,312 @@
+Test Case ID:
+
+TC_001X
+
+Test Case Name:
+
+İstifadəçi qeydiyyatı (Login / Registration)
+
+Module:
+
+Qeydiyyat
+
+Priority:
+
+Yüksək
+
+Test Type:
+
+Manual / Functional Test – Pozitiv
+
+Preconditions:
+Sayt açıq olmalıdır: https://buggy-e-commerce--leylamusazade99.replit.app/register
+İstifadəçi “Sign in” bölməsində olmalıdır
+Test Steps və Expected Results:
+Addım	Test Step	Expected Result
+TA1	“Create one” düyməsini klik et	Qeydiyyat formu açılır
+TA2	“Full name” xanasına Xayal yaz	Daxil edilən məlumat qəbul olunur
+TA3	“Email” xanasına xayalcik13@gmail.com
+ yaz	Daxil edilən məlumat qəbul olunur
+TA4	“Phone” xanasına 0557404140 yaz	Daxil edilən məlumat qəbul olunur
+TA5	“Password” xanasına Xm123456 yaz	Daxil edilən məlumat qəbul olunur
+TA6	“Confirm password” xanasına Xm123456 yaz	Daxil edilən məlumat qəbul olunur
+TA7	“Create account” düyməsini klik et	İstifadəçi qeydiyyatdan keçir və yeni səhifə açılır
+Expected Result:
+
+İstifadəçi uğurla qeydiyyatdan keçir və sistem onu yeni səhifəyə yönləndirir
+
+Actual Result:
+
+İstifadəçi uğurla qeydiyyatdan keçir və yeni səhifə açılır
+
+Status:
+
+Passed
+
+Notes / Defects:
+Şifrə üçün minimum 8 simvol tələbi yalnız “Create account” düyməsi klik edildikdən sonra göstərilir (real-time validation yoxdur)
+Qeydiyyatdan sonra məhsullar dərhal yüklənmir, yalnız səhifə yeniləndikdən sonra görünür
+
+
+Test Case ID:
+
+TC_002X
+
+Test Case Name:
+
+İstifadəçi girişi (Sign in)
+
+Module:
+
+Giriş
+
+Priority:
+
+Yüksək
+
+Test Type:
+
+Manual / Functional Test – Pozitiv
+
+Preconditions:
+Sayt açıq olmalıdır: https://buggy-e-commerce--leylamusazade99.replit.app/register
+İstifadəçi artıq qeydiyyatdan keçmiş olmalıdır
+Test Steps və Expected Results:
+Addım	Test Step	Expected Result
+TA1	“Sign in” düyməsini klik et	Giriş (login) formu açılır
+TA2	“Email” xanasına xayalcik13@gmail.com
+ daxil et	Daxil edilən məlumat qəbul olunur
+TA3	“Password” xanasına Xm123456 daxil et	Daxil edilən məlumat qəbul olunur
+TA4	“Sign in” düyməsini klik et	İstifadəçi sistemə daxil olur və yeni səhifə açılır
+Expected Result:
+
+İstifadəçi uğurla sistemə daxil olur
+
+Actual Result:
+
+İstifadəçi uğurla sistemə daxil olur
+
+Status:
+
+Passed
+
+Notes / Defects:
+İstifadəçi daxil olduqdan sonra məhsullar dərhal yüklənmir
+Məhsullar yalnız səhifə yeniləndikdən (refresh) sonra görünür
+
+
+
+Test Case ID:
+
+TC_003X
+
+Test Case Name:
+
+Səbətin düzgün işinin yoxlanılması
+
+Module:
+
+Səbət (Cart)
+
+Priority:
+
+Yüksək
+
+Test Type:
+
+Manual / Functional Test – Pozitiv
+
+Preconditions:
+Sayt açıq olmalıdır: https://buggy-e-commerce--leylamusazade99.replit.app
+İstifadəçi düzgün email və password ilə sistemə daxil olmalıdır
+Test Steps və Expected Results:
+Addım	Test Step	Expected Result
+TA1	Məhsul (nauşnik) şəklinin üzərinə klik et	Məhsulun detalları səhifəsi açılır
+TA2	“Add to cart” düyməsini 1 dəfə klik et	Səbət ikonunda məhsul sayı 1 olaraq göstərilir
+TA3	Səbət ikonuna klik et	Səbət səhifəsi açılır və seçilmiş məhsul göstərilir
+Expected Result:
+
+Seçilmiş məhsul uğurla səbətə əlavə olunur və səbətdə düzgün göstərilir
+
+Actual Result:
+
+Seçilmiş məhsul uğurla səbətə əlavə olunur və səbətdə düzgün göstərilir
+
+Status:
+
+Passed
+
+Notes / Defects:
+“Wishlist” düyməsinə klik edildikdə heç bir reaksiya vermir (funksionallıq işləmir və ya implement olunmayıb)
+
+
+Test Case ID:
+
+TC_004X
+
+Test Case Name:
+
+Profildə dəyişikliklərin yadda saxlanılması
+
+Module:
+
+Profil
+
+Priority:
+
+Yüksək
+
+Test Type:
+
+Manual / Functional Test – Pozitiv
+
+Preconditions:
+Sayt açıq olmalıdır: https://buggy-e-commerce--leylamusazade99.replit.app
+İstifadəçi düzgün email və password ilə sistemə daxil olmalıdır
+Test Steps və Expected Results:
+Addım	Test Step	Expected Result
+TA1	“Profil” düyməsini klik et	Profil səhifəsi açılır
+TA2	“Name” xanasındakı Xayal dəyərini Teymur ilə dəyiş	Dəyişiklik input sahəsində əks olunur
+TA3	“Email” xanasındakı xayal_13@mail.ru
+ dəyərini teymur_13@mail.ru
+ ilə dəyiş	Dəyişiklik input sahəsində əks olunur
+TA4	“Save changes” düyməsini klik et	Dəyişikliklər yadda saxlanılır və profil məlumatları yenilənir
+Expected Result:
+
+İstifadəçi məlumatları (ad və email) uğurla yenilənir və sistemdə saxlanılır
+
+Actual Result:
+
+İstifadəçi məlumatları uğurla yenilənir və sistemdə saxlanılır
+
+Status:
+
+Passed
+
+Notes / Defects:
+Qeyd: Bu test case profil funksionallığına aid deyil, amma sistem üzrə müşahidə edilən bug kimi qeyd edilə bilər: “Wishlist” düyməsi klik edildikdə heç bir reaksiya vermir
+Əlavə olaraq yoxlanmalıdır: dəyişiklikdən sonra səhifə yeniləndikdə (refresh) məlumatlar qalıcı olaraq saxlanılırmı
+
+
+# Test Case ID
+TC_005X
+
+# Test Case Adı
+Əsas səhifədə axtar funksiyasının yoxlanılması
+
+# Modul
+Axtar
+
+# Prioritet
+Yüksək
+
+# Test Növü
+Manual / Functional Test – Pozitiv
+
+# Ön Şərtlər
+1. Sayt açıq olmalıdır: https://buggy-e-commerce--leylamusazade99.replit.app
+2. İstifadəçi düzgün email və şifrə ilə sistemə daxil olmalıdır.
+
+# Test Addımları
+
+| Addım | Əməliyyat | Gözlənilən Nəticə |
+|-------|-----------|------------------|
+| TA1 | "Axtar" xanasına məhsulun adını daxil et: **Aura Mirrorless X2** | Məhsulun adı axtarış sahəsində görünür. |
+| TA2 | Klaviaturadan **Enter** düyməsini bas | Axtarılan məhsul əsas səhifədə göstərilir. |
+
+# Gözlənilən Nəticə
+Axtarılan məhsul əsas səhifədə göstərilməlidir.
+
+# Faktiki Nəticə
+Heç bir məhsul göstərilmir.
+
+# Status
+**Failed**
+
+# Qeydlər
+- "Axtar" xanasının axtarış düyməsi işləmir.
+
+
+# Test Case ID
+TC_006X
+
+# Test Case Adı
+İstifadəçi qeydiyyatı (Login)
+
+# Modul
+Qeydiyyat
+
+# Prioritet
+Yüksək
+
+# Test Növü
+Manual / Functional Test – Neqativ
+
+# Ön Şərtlər
+1. Sayt açıq olmalıdır: https://buggy-e-commerce--leylamusazade99.replit.app/register
+2. İstifadəçi "Sign In" bölməsində olmalıdır.
+
+# Test Addımları
+
+| Addım | Əməliyyat | Gözlənilən Nəticə |
+|-------|-----------|------------------|
+| TA1 | "Create one" düyməsini klik et | Qeydiyyat forması açılır. |
+| TA2 | Full Name sahəsinə `0000000000` daxil et | Daxil edilən məlumat sahədə görünür. |
+| TA3 | Email sahəsinə `xayalcik13@gmail.com` daxil et | Daxil edilən məlumat sahədə görünür. |
+| TA4 | Phone sahəsinə `0000000000` daxil et | Daxil edilən məlumat sahədə görünür. |
+| TA5 | Password sahəsinə `0000000000` daxil et | Daxil edilən məlumat sahədə görünür. |
+| TA6 | Confirm Password sahəsinə `0000000000` daxil et | Daxil edilən məlumat sahədə görünür. |
+| TA7 | "Create Account" düyməsini klik et | Sistem məlumatları yoxlayır. |
+
+# Gözlənilən Nəticə
+İstifadəçi qeydiyyatdan keçməməlidir.
+
+# Faktiki Nəticə
+İstifadəçi uğurla qeydiyyatdan keçdi və yeni səhifə açıldı.
+
+# Status
+**Failed**
+
+# Qeydlər
+1. Password sahəsinin minimum 8 simvol tələbi yalnız "Create Account" düyməsi klik edildikdən sonra göstərilir.
+2. Qeydiyyat tamamlandıqdan sonra məhsullar dərhal yüklənmədi. Səhifə yeniləndikdən sonra məhsullar göründü.
+
+# Test Case ID
+TC_007X
+
+# Test Case Adı
+Əsas səhifədən çıxış etmək
+
+# Modul
+Log Out
+
+# Prioritet
+Yüksək
+
+# Test Növü
+Manual / Functional Test – Pozitiv
+
+# Ön Şərtlər
+1. Sayt açıq olmalıdır: https://buggy-e-commerce--leylamusazade99.replit.app
+2. İstifadəçi düzgün email və şifrə ilə sistemə daxil olmalıdır.
+
+# Test Addımları
+
+| Addım | Əməliyyat | Gözlənilən Nəticə |
+|-------|-----------|------------------|
+| TA1 | "Profil" düyməsini klik et | Profil səhifəsi açılır. |
+| TA2 | "Log Out" düyməsini klik et | İstifadəçi sistemdən çıxış edir və əsas səhifəyə yönləndirilir. |
+
+# Gözlənilən Nəticə
+İstifadəçi sistemdən uğurla çıxış etməlidir və əsas səhifəyə yönləndirilməlidir.
+
+# Faktiki Nəticə
+İstifadəçi sistemdən çıxış edə bilmədi.
+
+# Status
+**Failed**
+
+# Qeydlər
+1. Əsas səhifədə və profil bölməsində "Log Out" düyməsi mövcud deyil.
+
+
